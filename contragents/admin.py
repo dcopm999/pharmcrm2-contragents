@@ -13,6 +13,8 @@ class ContactInline(admin.StackedInline):
 @admin.register(models.Contragent)
 class ContragentAdmin(admin.ModelAdmin):
     inlines = [ContactInline]
+    search_fields = ["name"]
+    autocomplete_fields = ["manager"]
     suit_form_tabs = (
         ("general", "General"),
         ("address", "Address"),
