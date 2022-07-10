@@ -1,4 +1,1 @@
 Django>=2.2,<4
-
-git+https://github.com/dcopm999/pharmcrm2-addresses.git
-git+https://github.com/dcopm999/pharmcrm2-hr.git
