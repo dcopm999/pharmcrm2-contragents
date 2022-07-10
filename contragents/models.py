@@ -47,6 +47,7 @@ class Contragent(models.Model):
     street = models.ForeignKey(
         "addresses.Street",
         blank=True,
+        null=True,
         verbose_name=_("Street"),
         on_delete=models.CASCADE,
     )
